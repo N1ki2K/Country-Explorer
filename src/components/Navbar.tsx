@@ -40,7 +40,7 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-background/95 backdrop-blur-md p-6 shadow-lg animate-fade-in">
           <div className="flex flex-col space-y-4">
-            <Link to="/" className="font-medium py-2" onClick={toggleMenu}>Home </Link>
+            <Link to="/" className="font-medium py-2" onClick={toggleMenu}>Home</Link>
             <Link to="/about" className="font-medium py-2" onClick={toggleMenu}>About</Link>
           </div>
         </div>

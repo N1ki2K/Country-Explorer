@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import { MapPin, Languages } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
@@ -29,6 +28,7 @@ const CountryCard = ({ country }: CountryCardProps) => {
           <div className="h-32 bg-gradient-to-br from-blue-400 to-green-400 dark:from-blue-600 dark:to-green-600 flex items-center justify-center">
             <span className="text-6xl">{country.emoji}</span>
           </div>
+          {/* This is the continent badge element */}
           <div className="absolute top-3 right-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-full px-2 py-1 text-xs font-medium text-gray-600 dark:text-gray-300">
             {country.continent.name}
           </div>

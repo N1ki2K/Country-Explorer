@@ -5,13 +5,18 @@
     { "path": "./tsconfig.node.json" }
   ],
   "compilerOptions": {
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["vite/client", "jest"],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     },
     "noImplicitAny": false,
     "noUnusedParameters": false,
-    "skipLibCheck": true,
     "allowJs": true,
     "noUnusedLocals": false,
     "strictNullChecks": false
