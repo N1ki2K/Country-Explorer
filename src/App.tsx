@@ -9,7 +9,7 @@ import CountryDetail from "./pages/CountryDetail";
 import NotFound from "./pages/NotFound";
 import { useEffect, useState } from "react";
 import About from "./pages/About";
-import Osu from "./pages/osu";
+// import Osu from "./pages/osu";
 
 
 const queryClient = new QueryClient();
@@ -22,9 +22,8 @@ const queryClient = new QueryClient();
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/country/:code" element={<CountryDetail />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="/about" element={<About />} />
-            <Route path="/osu" element={<Osu />} />
+            {/* <Route path="/osu" element={<Osu />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
