@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8">
           <Link to="/" className="font-medium effect-underline pb-1">Home</Link>
           <Link to="/about" className="font-medium effect-underline pb-1">About</Link>
-          <Link to="/osu" className="font-medium effect-underline pb-1">osu!</Link>
+          {/* <Link to="/osu" className="font-medium effect-underline pb-1">osu!</Link> */}
           <div className="flex items-center gap-2">
           </div>
         </div>
